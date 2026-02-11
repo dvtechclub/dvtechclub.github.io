@@ -1,13 +1,37 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>Tech Club</title>
+        <title>DV TECH CLUB</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
-
+    
     <body>
-        tech club website
+        <div id="mySidepanel" class="sidepanel">
+          <button class="closebtn" onclick="closeNav()">&times;</button>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Clients</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <div class="topbar">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+            <p id="title"> &#128435; DEER VALLEY TECH CLUB &#128435; </p>
+        </div>
         <a href="grade.html"> grade calculator</a>
-        <script>
-        // Script tags should go at the end of the body:
+        
+        
+        <script> 
+                /* Set the width of the sidebar to 250px (show it) */
+            function openNav() {
+              document.getElementById("mySidepanel").style.width = "250px";
+            }
+            
+            /* Set the width of the sidebar to 0 (hide it) */
+            function closeNav() {
+              document.getElementById("mySidepanel").style.width = "0";
+            }
         </script>
+        
     </body>
 </html>
