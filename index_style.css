@@ -3,6 +3,7 @@
   background-color: #b5b5b5;
   margin-top: -10px;
   margin-left: -10px;
+  overflow-x: hidden; /* Disable horizontal scroll */
 }
 
 #title {
