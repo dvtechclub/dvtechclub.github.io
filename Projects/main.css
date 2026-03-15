@@ -1,0 +1,41 @@
+body
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color: #b7eaf7;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+}
+
+#weightContainer
+{
+    display:flex;
+    flex-direction:row;
+}
+
+#examples
+{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.buttons
+{
+    display:flex;
+    width:443px;
+    flex-direction:row;
+    justify-content: space-between;
+}
+
+.calculate
+{
+  
+}
+
+.modify
+{
+  
+}
