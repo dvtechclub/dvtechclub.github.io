@@ -187,3 +187,7 @@
 .cursor_hand {
     cursor: pointer;
 }
+
+img {
+   height: 128px;
+}
