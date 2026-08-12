@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Resources - DV Tech Club</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" type="text/css" href="madden-css/style.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,600;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="mySidepanel" class="sidepanel">
+            <button class="closebtn" onclick="closeNav()">Close</button>
+            <div class="break"></div>
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="history.html">History</a>
+            <a href="resources.html">Resources</a>
+            <div class="break"></div>
+        </div>
+
+        <div class="topbar">
+            <button class="openbtn" onclick="openNav()">&#9776; </button>
+            <img class="topbar_logo" src="temp_logo.jpg">
+        </div>
+
+        <section class="container project_card project_intro">
+            <div class="project_inner">
+                <h1 class="libre-franklin">Resources</h1>
+            </div>
+        </section>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "300px";
+                document.getElementById("mySidepanel").style.left = "0px";
+            }
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0px";
+                document.getElementById("mySidepanel").style.left = "-8px";
+            }
+        </script>
+    </body>
+</html>
