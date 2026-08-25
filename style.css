@@ -45,7 +45,56 @@ body{
 
 .main_container{
     background-color:#ffffff;
-    height: 30rem;
+    min-height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    box-sizing: border-box;
+}
+
+/* ----- Home page welcome copy ----- */
+
+.home_welcome {
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 2.75rem;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    color: #0a246a;
+    max-width: 44rem;
+    margin: 0 0 1.25rem 0;
+}
+
+.home_subtext {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.55;
+    color: #24417f;
+    max-width: 40rem;
+    margin: 0;
+}
+
+.home_subtext a {
+    color: #0a246a;
+    font-weight: bold;
+    text-decoration: underline;
+    transition: 0.15s;
+}
+
+.home_subtext a:hover {
+    color: #ffffff;
+    background-color: #0a246a;
+    text-decoration: none;
+}
+
+@media (max-width: 720px) {
+    .home_welcome { font-size: 1.9rem; }
+    .home_subtext { font-size: 0.95rem; }
+    .main_container { padding: 1.75rem 1rem; }
 }
 
 .slider{

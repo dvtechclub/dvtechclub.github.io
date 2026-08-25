@@ -187,3 +187,79 @@
 .cursor_hand {
     cursor: pointer;
 }
+
+/* ============================================================
+   Resources page - contact cards + Band group section.
+   Reuses the white .project_inner panel and the sunken
+   .project_media well from the projects page.
+   ============================================================ */
+
+.contact_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 0.6rem;
+}
+
+.contact_card {
+    padding: 10px 12px;
+    background-color: #d4d4d4;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #eee #111 #111 #eee;
+    box-shadow: inset 1px 1px 0 #fefefe;
+}
+
+.contact_name {
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: #0a246a;
+    margin: 0 0 0.4rem 0;
+}
+
+.contact_line {
+    font-size: 0.9rem;
+    line-height: 1.45;
+    margin: 0.2rem 0 !important;
+    word-break: break-word;
+}
+
+.contact_label {
+    font-weight: bold;
+    color: #333;
+}
+
+/* ----- Band group section ----- */
+
+.band_media {
+    max-width: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.band_media img {
+    max-height: 300px;
+}
+
+.band_caption {
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+.band_link {
+    text-align: center;
+    font-size: 1rem !important;
+    word-break: break-all;
+}
+
+@media (max-width: 720px) {
+    .contact_grid {
+        grid-template-columns: 1fr;
+    }
+    .band_media img {
+        max-height: 240px;
+    }
+}
