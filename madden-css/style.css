@@ -263,3 +263,58 @@
         max-height: 240px;
     }
 }
+
+/* ============================================================
+   History page - one card per school year, in the same
+   white .project_inner panels used elsewhere on the site.
+   ============================================================ */
+
+.history_year .project_inner {
+    border-left: 5px solid #0a246a;
+}
+
+/* Founder portrait: a small centered well, not a full-width banner. */
+
+.history_portrait {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.history_portrait img {
+    max-height: 220px;
+}
+
+.history_caption {
+    text-align: center;
+    font-style: italic;
+    color: #555;
+    font-size: 0.82rem !important;
+    margin-top: -0.4rem !important;
+    margin-bottom: 0.8rem !important;
+}
+
+/* ----- The "to be decided" placeholder year ----- */
+
+.history_upcoming .project_inner {
+    border-left-color: #8d8d8d;
+}
+
+.history_tbd {
+    font-family: 'Libre Franklin', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.05rem !important;
+    color: #8d8d8d;
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+@media (max-width: 720px) {
+    .history_portrait {
+        max-width: 170px;
+    }
+    .history_portrait img {
+        max-height: 170px;
+    }
+}
